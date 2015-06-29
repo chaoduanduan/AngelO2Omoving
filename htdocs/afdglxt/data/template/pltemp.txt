@@ -1,0 +1,30 @@
+<?php
+if(!defined('InAvatarCMS'))
+{
+	exit();
+}
+?>
+<!--Avatar.listtemp.top-->
+<?php
+while($r=$Avatar->fetch($sql))
+{
+	$plusername=$r[username];
+	if(empty($r[username]))
+	{
+		$plusername=$fun_r['nomember'];
+	}
+	if($r[userid])
+	{
+		$plusername="<a href='$public_r[newsurl]afdglxt/space/?userid=$r[userid]' target='_blank'>$r[username]</a>";
+	}
+	$saytime=date('Y-m-d H:i:s',$r['saytime']);
+	//ip
+	$sayip=ToReturnXhIp($r[sayip]);
+	$saytext=RepPltextFace(stripSlashes($r['saytext']));//替换表情
+	$includelink=" onclick=\"javascript:document.saypl.repid.value='".$r[plid]."';document.saypl.saytext.focus();\"";
+?>
+<!--Avatar.listtemp.center-->
+<?
+}
+?>
+<!--Avatar.listtemp.footer-->

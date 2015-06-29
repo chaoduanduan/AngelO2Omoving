@@ -1,0 +1,12 @@
+#
+# robots.txt for AvatarCMS
+#
+
+User-agent: *
+
+Disallow: /d/
+Disallow: /afdglxt/class/
+Disallow: /afdglxt/config/
+Disallow: /afdglxt/data/
+Disallow: /afdglxt/enews/
+Disallow: /afdglxt/update/

@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */    
+/*reset Start*/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin: 0; padding: 0;}
+.changeBox_a1{width: 100%; text-align: center; height: 411px; position: relative; overflow: hidden;}
+.banner_pic { position:relative; width:2048px; height:411px; overflow:hidden;  }
+.banner_pic ul { position:absolute; top:0; left:0; width:99999px; height:411px; }
+.banner_pic ul li { float:left; width:2048px; }
+.banner a.btn_prev, .banner a.btn_next { display:block; width:200px; height:411px;  overflow:hidden; background-repeat:no-repeat; outline:none; hide-focus:expression(this.hideFocus=true); }
+.banner a.btn_prev { left:0; margin-left:1px;background-image:url(/js/hw_s_278985.png); z-index: 999999; position: absolute; }
+.banner a.btn_next { right:0; margin-right:1px;background-image:url(/js/hw_s_278985.png); z-index: 999999; position: absolute; }
+.banner a.btn_prev:hover { background-image:url(/js/hw_s_278985.png);background-position:56px -482px; }
+.banner a.btn_next:hover { background-image:url(/js/hw_s_278985.png);background-position:-462px -482px; }
+.banner_info {display:none;}
+.banner_pages { position:absolute; left: 52%; margin-left: -70px; overflow:hidden; margin-top:-30px;}
+.banner_pages ul {}
+.banner_pages li { float:left; margin-left:4px;}
+.banner_pages li span { display:block; width:13px; height:10px; margin-right:5px; overflow:hidden; background:url(/js/img_dev_en_banner_btn1.png) no-repeat 0 0; text-indent:-9999px; cursor:pointer; }
+.banner_pages li span:hover { background:url(/js/img_dev_en_banner_btn2.png) no-repeat 0 0; }
+.banner_pages li.current span, .banner_pages li.current span:hover { background:url(/js/img_dev_en_banner_btn2.png) no-repeat 0 0; }
+
