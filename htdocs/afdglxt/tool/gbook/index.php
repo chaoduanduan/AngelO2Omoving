@@ -59,7 +59,7 @@ $url="<a href='".ReturnSiteIndexUrl()."'>".$fun_r['index']."</a>&nbsp;>&nbsp;".$
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>订单留言</title>
+<title>Contact</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="/skin/default/css/style.css" rel="stylesheet" type="text/css" />
@@ -193,7 +193,7 @@ if($r[retext])
 								<form action="../../enews/index.php" method="post" name="form1" id="form1">
 									<table width="92%" border="0" align="center" cellpadding="4" cellspacing="1"class="tableborder">
 										<tr class="header">
-											<td colspan="2" bgcolor="#F4F9FD"><strong><div class="nynr" style=" ">请您留言:</div></strong></td>
+											<td colspan="2" bgcolor="#F4F9FD"><strong><div class="nynr" style=" ">please leaves your message:</div></strong></td>
 										</tr>
 										<tr bgcolor="#FFFFFF">
 											<td width="20%"><div class="nynr" style=" ">Name:</div></td>
