@@ -59,11 +59,14 @@ $url="<a href='".ReturnSiteIndexUrl()."'>".$fun_r['index']."</a>&nbsp;>&nbsp;".$
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>留言板</title>
-<meta name="keywords" content="<?=$bname?>" />
-<meta name="description" content="<?=$bname?>" />
+<title>订单留言</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
 <link href="/skin/default/css/style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="/skin/default/js/tabs.js"></script>
+<link rel="stylesheet" href="/js/css_con_cn_main1.css" type="text/css" media="screen, project, print" />
+<script type="text/javascript" src="/js/script_dev_en_jquery_min.js"></script>
+<script type="text/javascript" src="/js/script_dev_en_banner.js"></script>
 </head>
 <body class="listpage">
 <!-- 页头 -->
@@ -71,58 +74,76 @@ $url="<a href='".ReturnSiteIndexUrl()."'>".$fun_r['index']."</a>&nbsp;>&nbsp;".$
 <tr>
 <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="63%">
-<!-- 登录 -->
-<script>
-document.write('<script src="/afdglxt/member/login/loginjs.php?t='+Math.random()+'"><'+'/script>');
-</script>
-</td>
+
 <td align="right">
-<a onclick="window.external.addFavorite(location.href,document.title)" href="#ecms">加入收藏</a> | <a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('/')" href="#ecms">设为首页</a> | <a href="/afdglxt/member/cp/">会员中心</a> | <a href="/afdglxt/DoInfo/">我要投稿</a> | <a href="/afdglxt/web/?type=rss2" target="_blank">RSS<img src="/skin/default/images/rss.gif" border="0" hspace="2" /></a>
 </td>
 </tr>
 </table></td>
 </tr>
 </table>
-<table width="100%" border="0" cellpadding="0" cellspacing="10">
-<tr valign="middle">
-<td width="240" align="center"><a href="/"><img src="/skin/default/images/logo.gif" width="200" height="65" border="0" /></a></td>
-<td align="center"><a href="http://www.caity.net/OpenSource/" target="_blank"><img src="/skin/default/images/opensource.gif" width="100%" height="70" border="0" /></a></td>
-</tr>
-</table>
+
 <!-- 导航tab选项卡 -->
-<table width="920" border="0" align="center" cellpadding="0" cellspacing="0" class="nav">
-  <tr> 
-    <td class="nav_global"><ul>
-        <li class="curr" id="tabnav_btn_0" onmouseover="tabit(this)"><a href="/">首页</a></li>
-        <li id="tabnav_btn_1" onmouseover="tabit(this)"><a href="/news/">新闻中心</a></li>
-        <li id="tabnav_btn_2" onmouseover="tabit(this)"><a href="/download/">下载中心</a></li>
-        <li id="tabnav_btn_3" onmouseover="tabit(this)"><a href="/movie/">影视频道</a></li>
-        <li id="tabnav_btn_4" onmouseover="tabit(this)"><a href="/shop/">网上商城</a></li>
-        <li id="tabnav_btn_5" onmouseover="tabit(this)"><a href="/flash/">FLASH频道</a></li>
-        <li id="tabnav_btn_6" onmouseover="tabit(this)"><a href="/photo/">图片频道</a></li>
-        <li id="tabnav_btn_7" onmouseover="tabit(this)"><a href="/article/">文章中心</a></li>
-        <li id="tabnav_btn_8" onmouseover="tabit(this)"><a href="/info/">分类信息</a></li>
-      </ul></td>
-  </tr>
-</table>
+
+  <div style="background-image:url(/syimg/top.jpg); background-repeat:repeat-x; background-position:top;">
+<div class="bar">
+<div style="float:right; width:100px;"><a href="/" class="lv">English</a> | <a href="/yw" class="lv">中文版</a></div>
+</div>
+<div class="daohang">
+<ul>
+<li><a href="/" class="dh">Home</a></li>
+<li><a href="/yw/wzgk/2015-05-21/1.html" class="dh">About Us</a></li>
+<li><a href="/yw/wzgk/2015-05-21/9.html" class="dh">Purpose</a></li>
+<li><a href="http://www.angleo2omoving.com/wzgk/2015-07-01/24.html" class="dh">Payment</a></li>
+<li><a href="/yw/clmm/" class="dh">Moving&S</a></li>
+<li><a href="/yw/wzgk/2015-05-22/10.html" class="dh">SeversQ&A</a></li>
+<li><a href="http://www.angleo2omoving.com/afdglxt/tool/gbook/?bid=1" class="dh">Contact</a></li>
+</ul>
+</div>
+</div>
+<div>
+<div class="banner" id="hwbanner">
+  <a href="/index.html" class="btn_prev" title=""></a> 
+  <a href="/index.html" class="btn_next" title=""></a> 
+  <div class="changeBox_a1">
+   	<div id="galleryMedia" style="float:left; left:50%; position:relative;">
+	  <div class="img" style="float:left; position:relative; right:50%;">
+		<div class="banner_pic">
+		  <ul>
+<li onClick="javascript:setBannerPageview('1')"><a href="#" target="_blank"><img src="/syimg/1.jpg" border="0"/></a></li>
+<li onClick="javascript:setBannerPageview('2')"><a href="#" target="_blank"><img src="/syimg/2.jpg" border="0"/></a></li>
+<li onClick="javascript:setBannerPageview('3')"><a href="#" target="_blank"><img src="/syimg/3.jpg" border="0"/></a></li>
+		  </ul>
+		</div>
+      			<div class="banner_info"> 
+					<ul><li></li>
+						<li></li>
+						<li></li></ul>
+				</div>
+	  </div>
+   	</div>	
+  </div>
+</div>
+<div></div></div>
+
+
 <table width="100%" border="0" cellspacing="10" cellpadding="0">
 <tr valign="top">
 <td class="list_content"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="position">
-<tr>
-<td>现在的位置：<a href=../../../>首页</a>&nbsp;>&nbsp;<?=$bname?>
-</td>
-</tr>
+
 </table><table width="100%" border="0" cellspacing="0" cellpadding="0" class="box">
 	<tr>
 		<td><table width="100%" border="0" cellpadding="3" cellspacing="2">
-			<tr>
-				<td align="center" bgcolor="#E1EFFB"><strong><?=$bname?></strong></td>
-			</tr>
+			
 			<tr>
 				<td align="left" valign="top"><table width="100%" border="0" cellpadding="4" cellspacing="0" bgcolor="#FFFFFF">
 						<tr>
 							<td height="100%" valign="top" bgcolor="#FFFFFF"> 
+							
+							
+
+
+
+
 <?
 while($r=$Avatar->fetch($sql))
 {
@@ -166,36 +187,36 @@ if($r[retext])
 
 								<table width="92%" border="0" align="center" cellpadding="4" cellspacing="1">
 									<tr>
-										<td>分页: <?=$listpage?></td>
+										<td> <?=$listpage?></td>
 									</tr>
 								</table>
 								<form action="../../enews/index.php" method="post" name="form1" id="form1">
 									<table width="92%" border="0" align="center" cellpadding="4" cellspacing="1"class="tableborder">
 										<tr class="header">
-											<td colspan="2" bgcolor="#F4F9FD"><strong>请您留言:</strong></td>
+											<td colspan="2" bgcolor="#F4F9FD"><strong><div class="nynr" style=" ">请您留言:</div></strong></td>
 										</tr>
 										<tr bgcolor="#FFFFFF">
-											<td width="20%">姓名:</td>
+											<td width="20%"><div class="nynr" style=" ">Name:</div></td>
 											<td width="722" height="23"><input name="name" type="text" id="name" />
 												*</td>
 										</tr>
 										<tr bgcolor="#FFFFFF">
-											<td>联系邮箱:</td>
+											<td><div class="nynr" style=" ">Email:</div></td>
 											<td height="23"><input name="email" type="text" id="email" />
 												*</td>
 										</tr>
 										<tr bgcolor="#FFFFFF">
-											<td>联系电话:</td>
+											<td><div class="nynr" style=" ">Call Number:</div></td>
 											<td height="23"><input name="mycall" type="text" id="mycall" /></td>
 										</tr>
 										<tr bgcolor="#FFFFFF">
-											<td>留言内容(*):</td>
+											<td><div class="nynr" style=" "> Message(*):</div></td>
 											<td height="23"><textarea name="lytext" cols="60" rows="12" id="lytext"></textarea></td>
 										</tr>
 										<tr bgcolor="#FFFFFF">
 											<td height="23">&nbsp;</td>
-											<td height="23"><input type="submit" name="Submit3" value="提交" />
-											<input type="reset" name="Submit22" value="重置" />
+											<td height="23"><input type="submit" name="Submit3" value="Submit" />
+											<input type="reset" name="Submit22" value="Reset" />
 											<input name="enews" type="hidden" id="enews" value="AddGbook" /></td>
 										</tr>
 									</table>
@@ -208,18 +229,28 @@ if($r[retext])
 </table></td>
 </tr>
 </table>
+
+<div id="nynrbj">
+<div class="nynr" style=" "><p>地&nbsp;&nbsp;&nbsp; 址(Address)：217 Puffin Ct Foster City CA 94404<br />
+办公电话(Call)：(770)568-0586<br />
+办公传真(Fax)：(650)389-7672<br />
+微信账号(WeChat)：5107031051<br />
+邮&nbsp;&nbsp;&nbsp; 件(Email)：<a href="mailto:AngelTechAutoService@gmail.com">AngelTechAutoService@gmail.com</a></p></div>
+</div>
+
 <div style="background-image:url(/syimg/sy_r7_c2.jpg); background-repeat:repeat-x; background-position:top;">
 <div class="bottom">
 <div style="padding-top:60px;">
-<a href="/" class="bai">网站首页</a> 
-<a href="/wzgk/2015-05-21/1.html" class="bai">公司简介</a> 
-<a href="/wzgk/2015-05-21/9.html" class="bai">公司宗旨</a> 
-<a href="/clmm/" class="bai">车辆买卖</a> 
-<a href="/wzgk/2015-05-22/10.html" class="bai">服务问答</a> 
-<a href="/wzgk/2015-05-21/8.html" class="bai">联系我们</a>
-<a href="/afdglxt/guanli" class="bai">管理登陆</a><br>
-  办公电话：415-806-1959 (SAN FRANCISCO ) 408-799-5035 (SAN JOSE ) 510-612-5538 （OAKLAND ）<br>
-  地址：141 THRIFT STREET,SAN FRANCISCO ,CA 94112 邮件：FASTRAKMOVER@gmail.com</div>
+<a href="/yw/" class="bai">Home</a> 
+<a href="/yw/wzgk/2015-05-21/1.html" class="bai">About Us</a> 
+<a href="/yw/wzgk/2015-05-21/9.html" class="bai">Purpose</a> 
+<a href="http://www.angleo2omoving.com/wzgk/2015-07-01/24.html" class="bai">Payment</a>
+<a href="/yw/clmm/" class="bai">Moving&S</a></a>
+<a href="/yw/wzgk/2015-05-22/10.html" class="bai">SeversQ&A</a> 
+<a href="http://www.angleo2omoving.com/afdglxt/tool/gbook/?bid=1" class="bai">Contact</a><br>
+
+  Address：217 Puffin Ct Foster City CA 94404<br>
+ Tel：(770)568-0586 E-mail：AngelTechAutoService@gmail.com</div>
 </div></div>
 </body>
 </html>
@@ -227,3 +258,86 @@ if($r[retext])
 db_close();
 $Avatar=null;
 ?>
+<script type="text/javascript">
+
+function setBannerPageview(index){
+	trackPageview("/banner"+index);
+}
+
+$('#change_banner .a_bigImg').soChange({
+thumbObj:'#change_banner .ul_change_a2 span',
+thumbNowClass:'on',
+changeType:'fade',
+changeTime:5000
+});
+
+function focusBox(o){
+	if(!o) return;
+	var w=2048, $o=$('#'+o),i=0,l=0;arr= [],t= null,
+		$infoLi = $o.find('.banner_info li'), len= $infoLi.length*2,
+		$ul=$o.find('.banner_pic>ul');
+	$ul.append($ul.html()).css({'width':len*w, 'left': -len*w/2});
+	$infoLi.eq(0).addClass('current');
+	//add banner_pages element
+	arr.push('<div class="banner_pages"><ul>');
+	$infoLi.each(function(i){
+		if(i==0){
+			arr.push('<li class="current"><span>'+ (i+1) +'<'+'/'+'sp'+'an></li>');
+		}else{
+			arr.push('<li><span>'+ (i+1) +'<'+'/'+'sp'+'an></li>');
+		}
+	});
+	arr.push('</ul></div>');
+	$o.append(arr.join(''));
+	var $pagesLi = $o.find('.banner_pages li');
+	//mouse
+	$pagesLi.children('span').click(function(){
+		var p = $pagesLi.index($o.find('.banner_pages li.current'));
+		i = $pagesLi.children('span').index($(this));
+		if(i==p) return;
+		l = parseInt($ul.css('left')) + w*(p-i);
+		addCurrent(i,l);
+		return false;
+	})
+	$o.children('a.btn_prev').click(function(){
+		i = $pagesLi.index($o.find('.banner_pages li.current'));
+		(i==0)? i=(len/2-1):i--;
+		l = parseInt($ul.css('left')) + w;
+		addCurrent(i,l);
+		return false;
+	})
+	$o.children('a.btn_next').click(function(){
+		i = ($pagesLi.index($o.find('.banner_pages li.current'))+1)%(len/2);
+		l = parseInt($ul.css('left')) - w;
+		addCurrent(i,l);
+		return false;
+	})
+	//auto focus
+	t = setInterval(init,8000);
+	$o.hover(function(){
+		clearInterval(t);
+	}, function(){
+		t = setInterval(init,8000);
+	});
+	function init(){
+		$o.children('a.btn_next').trigger('click');
+	}
+	//add focus
+	function addCurrent(i,l){
+		if($ul.is(':animated')) return;
+		$ul.animate({'left':l},500,function(){
+			$o.children('.banner_count').text(i+1);
+			$infoLi.not($infoLi.eq(i).addClass('current')).removeClass('current');
+			$pagesLi.not($pagesLi.eq(i).addClass('current')).removeClass('current');
+			if(l== (1-len)*w){
+				$ul.css({'left': (1-len/2)*w});
+			}else if(l== 0){
+				$ul.css({'left': -len*w/2});
+			}
+		});
+	}
+}
+ 
+$(function(){
+	focusBox('hwbanner');
+})

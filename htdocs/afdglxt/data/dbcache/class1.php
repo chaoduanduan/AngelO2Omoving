@@ -55,7 +55,7 @@ $class_r[2]=Array('classid'=>2,
 'dtlisttempid'=>1);
 $class_r[3]=Array('classid'=>3,
 'bclassid'=>0,
-'classname'=>'车辆买卖',
+'classname'=>'车辆服务',
 'sonclass'=>'',
 'featherclass'=>'',
 'islast'=>1,
@@ -76,7 +76,7 @@ $class_r[3]=Array('classid'=>3,
 'openadd'=>1,
 
 'checked'=>1,
-'bname'=>'车辆买卖',
+'bname'=>'车辆服务',
 
 'reorder'=>'newstime DESC',
 'dtlisttempid'=>3);
