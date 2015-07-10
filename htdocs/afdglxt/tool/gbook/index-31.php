@@ -67,65 +67,6 @@ $url="<a href='".ReturnSiteIndexUrl()."'>".$fun_r['index']."</a>&nbsp;>&nbsp;".$
 <link rel="stylesheet" href="/js/css_con_cn_main1.css" type="text/css" media="screen, project, print" />
 <script type="text/javascript" src="/js/script_dev_en_jquery_min.js"></script>
 <script type="text/javascript" src="/js/script_dev_en_banner.js"></script>
-
- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
-	
-    <script>
-// If you're adding a number of markers, you may want to drop them on the map
-// consecutively rather than all at once. This example shows how to use
-// window.setTimeout() to space your markers' animation.
-
-var berlin = new google.maps.LatLng(37.5037471,-122.3521126);
-
-var neighborhoods = [
-  new google.maps.LatLng(37.7577,-122.4376),
-  new google.maps.LatLng(37.7577,-122.4376),
-  new google.maps.LatLng(37.6639962,-122.4231804),
-  new google.maps.LatLng(37.5037471,-122.3521126),
-  new google.maps.LatLng(37.3860098,-121.9301667)
-];
-
-var markers = [];
-var map;
-
-function initialize() {
-  var mapOptions = {
-    zoom: 9,
-    center: berlin
-  };
-
-  map = new google.maps.Map(document.getElementById('map-canvas'),
-          mapOptions);
-}
-
-function drop() {
-  clearMarkers();
-  for (var i = 0; i < neighborhoods.length; i++) {
-    addMarkerWithTimeout(neighborhoods[i], i * 200);
-  }
-}
-
-function addMarkerWithTimeout(position, timeout) {
-  window.setTimeout(function() {
-    markers.push(new google.maps.Marker({
-      position: position,
-      map: map,
-      animation: google.maps.Animation.DROP
-    }));
-  }, timeout);
-}
-
-function clearMarkers() {
-  for (var i = 0; i < markers.length; i++) {
-    markers[i].setMap(null);
-  }
-  markers = [];
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-drop();
-
-    </script>
 </head>
 <body class="listpage">
 <!-- 页头 -->
@@ -183,8 +124,6 @@ drop();
   </div>
 </div>
 <div></div></div>
-
-
 
 
 <table width="100%" border="0" cellspacing="10" cellpadding="0">
@@ -282,15 +221,7 @@ if($r[retext])
 										</tr>
 									</table>
 								</form></td>
-                                
-                                <td>
- <div id="map-canvas" style="width: 500px; height: 500px; left: 0px; top: 0px; div>
-	<div id="show_x"></div><!--显示X坐标-->
-     <div id="show_y"></div><!--显示Y坐标-->
-     <div id="zoom"></div><!--显示缩放级别--></td>
 						</tr>
-                        
-                        </tr>
 				</table></td>
 			</tr>
 		</table></td>

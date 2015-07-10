@@ -75,10 +75,9 @@ $url="<a href='".ReturnSiteIndexUrl()."'>".$fun_r['index']."</a>&nbsp;>&nbsp;".$
 // consecutively rather than all at once. This example shows how to use
 // window.setTimeout() to space your markers' animation.
 
-var berlin = new google.maps.LatLng(37.5037471,-122.3521126);
+var berlin = new google.maps.LatLng(37.7577,-122.4376);
 
 var neighborhoods = [
-  new google.maps.LatLng(37.7577,-122.4376),
   new google.maps.LatLng(37.7577,-122.4376),
   new google.maps.LatLng(37.6639962,-122.4231804),
   new google.maps.LatLng(37.5037471,-122.3521126),
@@ -275,19 +274,18 @@ if($r[retext])
 											<td height="23"><textarea name="lytext" cols="60" rows="12" id="lytext"></textarea></td>
 										</tr>
 										<tr bgcolor="#FFFFFF">
-											<td height="23">&nbsp;</td>
+											<td height="23"> <div id="map-canvas" style="width: 500px; height: 500px; left: 0px; top: 0px; div>
+	<div id="show_x"></div><!--显示X坐标-->
+     <div id="show_y"></div><!--显示Y坐标-->
+     <div id="zoom"></div><!--显示缩放级别-</td>
 											<td height="23"><input type="submit" name="Submit3" value="Submit" />
 											<input type="reset" name="Submit22" value="Reset" />
 											<input name="enews" type="hidden" id="enews" value="AddGbook" /></td>
 										</tr>
 									</table>
 								</form></td>
-                                
                                 <td>
- <div id="map-canvas" style="width: 500px; height: 500px; left: 0px; top: 0px; div>
-	<div id="show_x"></div><!--显示X坐标-->
-     <div id="show_y"></div><!--显示Y坐标-->
-     <div id="zoom"></div><!--显示缩放级别--></td>
+-></td>
 						</tr>
                         
                         </tr>

@@ -75,10 +75,9 @@ $url="<a href='".ReturnSiteIndexUrl()."'>".$fun_r['index']."</a>&nbsp;>&nbsp;".$
 // consecutively rather than all at once. This example shows how to use
 // window.setTimeout() to space your markers' animation.
 
-var berlin = new google.maps.LatLng(37.5037471,-122.3521126);
+var berlin = new google.maps.LatLng(37.7577,-122.4376);
 
 var neighborhoods = [
-  new google.maps.LatLng(37.7577,-122.4376),
   new google.maps.LatLng(37.7577,-122.4376),
   new google.maps.LatLng(37.6639962,-122.4231804),
   new google.maps.LatLng(37.5037471,-122.3521126),
@@ -282,7 +281,6 @@ if($r[retext])
 										</tr>
 									</table>
 								</form></td>
-                                
                                 <td>
  <div id="map-canvas" style="width: 500px; height: 500px; left: 0px; top: 0px; div>
 	<div id="show_x"></div><!--显示X坐标-->

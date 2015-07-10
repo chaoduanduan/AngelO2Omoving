@@ -75,10 +75,9 @@ $url="<a href='".ReturnSiteIndexUrl()."'>".$fun_r['index']."</a>&nbsp;>&nbsp;".$
 // consecutively rather than all at once. This example shows how to use
 // window.setTimeout() to space your markers' animation.
 
-var berlin = new google.maps.LatLng(37.5037471,-122.3521126);
+var berlin = new google.maps.LatLng(37.7577,-122.4376);
 
 var neighborhoods = [
-  new google.maps.LatLng(37.7577,-122.4376),
   new google.maps.LatLng(37.7577,-122.4376),
   new google.maps.LatLng(37.6639962,-122.4231804),
   new google.maps.LatLng(37.5037471,-122.3521126),
@@ -129,6 +128,7 @@ drop();
 </head>
 <body class="listpage">
 <!-- 页头 -->
+
 <table width="100%" border="0" cellspacing="0" cellpadding="0" class="top">
 <tr>
 <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -183,8 +183,6 @@ drop();
   </div>
 </div>
 <div></div></div>
-
-
 
 
 <table width="100%" border="0" cellspacing="10" cellpadding="0">
@@ -252,63 +250,69 @@ if($r[retext])
 									</tr>
 								</table>
 								<form action="../../enews/index.php" method="post" name="form1" id="form1">
-									<table width="92%" border="0" align="center" cellpadding="4" cellspacing="1"class="tableborder">
-										<tr class="header">
-											<td colspan="2" bgcolor="#F4F9FD"><strong><div class="nynr" style=" ">please leaves your message:</div></strong></td>
-										</tr>
-										<tr bgcolor="#FFFFFF">
-											<td width="20%"><div class="nynr" style=" ">Name:</div></td>
-											<td width="722" height="23"><input name="name" type="text" id="name" />
-												*</td>
-										</tr>
-										<tr bgcolor="#FFFFFF">
-											<td><div class="nynr" style=" ">Email:</div></td>
-											<td height="23"><input name="email" type="text" id="email" />
-												*</td>
-										</tr>
-										<tr bgcolor="#FFFFFF">
-											<td><div class="nynr" style=" ">Call Number:</div></td>
-											<td height="23"><input name="mycall" type="text" id="mycall" /></td>
-										</tr>
-										<tr bgcolor="#FFFFFF">
-											<td><div class="nynr" style=" "> Message(*):</div></td>
-											<td height="23"><textarea name="lytext" cols="60" rows="12" id="lytext"></textarea></td>
-										</tr>
-										<tr bgcolor="#FFFFFF">
-											<td height="23">&nbsp;</td>
-											<td height="23"><input type="submit" name="Submit3" value="Submit" />
-											<input type="reset" name="Submit22" value="Reset" />
-											<input name="enews" type="hidden" id="enews" value="AddGbook" /></td>
-										</tr>
-									</table>
+								  <table width="200" border="0" cellspacing="10" cellpadding="1">
+								    <tr>
+									    <th scope="col"><table width="92%" border="0" align="center" cellpadding="4" cellspacing="1"class="tableborder">
+									      <tr class="header">
+									        <td colspan="2" bgcolor="#F4F9FD"><strong>
+									          <div class="nynr" style=" ">please leaves your message:</div>
+									          </strong></td>
+								          </tr>
+									      <tr bgcolor="#FFFFFF">
+									        <td width="20%"><div class="nynr" style=" ">Name:</div></td>
+									        <td width="722" height="23"><input name="name" type="text" id="name" />
+									          *</td>
+								          </tr>
+									      <tr bgcolor="#FFFFFF">
+									        <td><div class="nynr" style=" ">Email:</div></td>
+									        <td height="23"><input name="email" type="text" id="email" />
+									          *</td>
+								          </tr>
+									      <tr bgcolor="#FFFFFF">
+									        <td><div class="nynr" style=" ">Call Number:</div></td>
+									        <td height="23"><input name="mycall" type="text" id="mycall" /></td>
+								          </tr>
+									      <tr bgcolor="#FFFFFF">
+									        <td><div class="nynr" style=" "> Message(*):</div></td>
+									        <td height="23"><textarea name="lytext" cols="60" rows="12" id="lytext"></textarea></td>
+								          </tr>
+									      <tr bgcolor="#FFFFFF">
+									        <td height="23">&nbsp;</td>
+									        <td height="23"><input type="submit" name="Submit3" value="Submit" />
+									          <input type="reset" name="Submit22" value="Reset" />
+									          <input name="enews" type="hidden" id="enews" value="AddGbook" /></td>
+								          </tr>
+								        </table></th>
+									    <th scope="col"><div id="map-canvas" style="width: 500px; height: 500px; left: 10px; top: 50px; div&gt;
+	&lt;div id="show_x="show_x""></div></th>
+							        </tr>
+									  <tr>
+									    <td><div id="nynrbj">
+									      <div class="nynr" style=" ">
+									        <p>地&nbsp;&nbsp;&nbsp; 址(Address)：217 Puffin Ct Foster City CA 94404<br />
+									          办公电话(Call)：(770)568-0586<br />
+									          办公传真(Fax)：(650)389-7672<br />
+									          微信账号(WeChat)：5107031051<br />
+									          邮&nbsp;&nbsp;&nbsp; 件(Email)：<a href="mailto:AngelTechAutoService@gmail.com">AngelTechAutoService@gmail.com</a></p>
+								          </div>
+								        </div></td>
+									    <td>&nbsp;</td>
+								      </tr>
+								  </table>
 								</form></td>
-                                
-                                <td>
- <div id="map-canvas" style="width: 500px; height: 500px; left: 0px; top: 0px; div>
-	<div id="show_x"></div><!--显示X坐标-->
-     <div id="show_y"></div><!--显示Y坐标-->
-     <div id="zoom"></div><!--显示缩放级别--></td>
 						</tr>
-                        
-                        </tr>
 				</table></td>
 			</tr>
 		</table></td>
 	</tr>
 </table></td>
 </tr>
-</table>
-
-<div id="nynrbj">
-<div class="nynr" style=" "><p>地&nbsp;&nbsp;&nbsp; 址(Address)：217 Puffin Ct Foster City CA 94404<br />
-办公电话(Call)：(770)568-0586<br />
-办公传真(Fax)：(650)389-7672<br />
-微信账号(WeChat)：5107031051<br />
-邮&nbsp;&nbsp;&nbsp; 件(Email)：<a href="mailto:AngelTechAutoService@gmail.com">AngelTechAutoService@gmail.com</a></p></div>
-</div>
+</table><!--显示X坐标-->
+<div id="show_y"></div><!--显示Y坐标-->
+     <div id="zoom"></div><!--显示缩放级别-->
 
 <div style="background-image:url(/syimg/sy_r7_c2.jpg); background-repeat:repeat-x; background-position:top;">
-<div class="bottom">
+  <div class="bottom">
 <div style="padding-top:60px;">
 <a href="/yw/" class="bai">Home</a> 
 <a href="/yw/wzgk/2015-05-21/1.html" class="bai">About Us</a> 
@@ -321,6 +325,8 @@ if($r[retext])
   Address：217 Puffin Ct Foster City CA 94404<br>
  Tel：(770)568-0586 E-mail：AngelTechAutoService@gmail.com</div>
 </div></div>
+
+
 </body>
 </html>
 <?php
